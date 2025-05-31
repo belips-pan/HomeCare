@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="6dp"
+    android:gravity="center">
+
+    <!-- Exit Application Button -->
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="exitApplication"
+        android:padding="10dp"
+        android:text="Exit Application" />
+
+    <!-- Grid Layout for Image Buttons -->
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="4"
+        android:layout_gravity="center">
+
+        <ImageButton
+            android:id="@+id/button1"
+            android:layout_width="180dp"
+            android:layout_height="152dp"
+            android:src="@drawable/im1"
+            android:contentDescription="Button 1"/>
+
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_width="180dp"
+            android:layout_height="152dp"
+            android:src="@drawable/im2"
+            android:contentDescription="Button 2"/>
+
+        <ImageButton
+            android:id="@+id/button3"
+            android:layout_width="180dp"
+            android:layout_height="152dp"
+            android:src="@drawable/im3"
+            android:contentDescription="Button 3"/>
+
+        <ImageButton
+            android:id="@+id/button4"
+            android:layout_width="180dp"
+            android:layout_height="152dp"
+            android:src="@drawable/im4"
+            android:contentDescription="Button 4"/>
+
+        <ImageButton
+            android:id="@+id/button5"
+            android:layout_width="180dp"
+            android:layout_height="152dp"
+            android:src="@drawable/im5"
+            android:contentDescription="Button 5"/>
+
+        <ImageButton
+            android:id="@+id/button6"
+            android:layout_width="180dp"
+            android:layout_height="152dp"
+            android:src="@drawable/im6"
+            android:contentDescription="Button 6"/>
+
+        <ImageButton
+            android:id="@+id/button7"
+            android:layout_width="180dp"
+            android:layout_height="152dp"
+            android:src="@drawable/im7"
+            android:contentDescription="Button 7"/>
+
+        <ImageButton
+            android:id="@+id/button8"
+            android:layout_width="180dp"
+            android:layout_height="152dp"
+            android:src="@drawable/im8"
+            android:contentDescription="Button 8"/>
+
+    </GridLayout>
+
+</LinearLayout>
+

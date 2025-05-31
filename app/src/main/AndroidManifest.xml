@@ -1,0 +1,65 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.homecare">
+
+    <!-- Άδεια για πρόσβαση στο Internet (απαραίτητη για IoT σύνδεση) -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- Άδεια για άνοιγμα εξωτερικών εφαρμογών όπως το Viber -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="viber"/>
+        </intent>
+    </queries>
+
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.My_First_App"
+        tools:targetApi="31">
+
+        <activity android:name="com.example.homecare.MainActivity"
+            android:exported="true"
+            tools:ignore="WrongManifestParent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Δηλώσεις των Activities -->
+        <activity
+            android:name="com.example.homecare.Activity1"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name="com.example.homecare.Activity2"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name="com.example.homecare.Activity3"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name="com.example.homecare.Activity4"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name="com.example.homecare.Activity5"
+            android:exported="false">
+        </activity>
+    </application>
+
+</manifest>
+
